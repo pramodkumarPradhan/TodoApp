@@ -1,0 +1,188 @@
+EventListener
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function updatebtn() {
+            document.write("updated..")
+        }
+        function bodyload() {
+            document.getElementById("insertbtn").addEventListener("click",()=>{
+                document.write("inserted..")
+            })
+
+            var btn=document.createElement("button");
+            btn.innerHTML="delete";
+            btn.addEventListener("click",()=>{
+                document.write("deleted..")
+            })
+            document.querySelector("body").appendChild(btn);
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <button id="insertbtn">insert</button>
+    <button onclick="updatebtn()">update</button>
+</body>
+
+</html> -->
+
+<!-- EventArgument -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <SCRIPT>
+        function data(button) {
+            switch (button.name) {
+                case "add":
+                    document.querySelector("p").innerHTML="added..";
+                    break;
+                case "update":
+                document.querySelector("p").innerHTML="updated..";
+                    break;
+                case "delete":
+                document.querySelector("p").innerHTML="deleted..";
+                    break;
+            }
+        }
+    </SCRIPT>
+</head>
+
+<body>
+    <button onclick="data(this)" name="add">ADD</button>
+    <button onclick="data(this)" name="update">UPDATE</button>
+    <button onclick="data(this)" name="delete">DELETE</button>
+    <p></p>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+      function LinkClick(e, label){
+          if(e.ctrlKey){
+              window.open('https://www.amazon.in','Amazon');
+          }
+          console.log(label.title);
+      }
+   </script>
+</head>
+<body>
+    <label onclick="LinkClick(event, this)" title="Ctrl+Click to follow link">https://www.amazon.in</label>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function lblclick(link) {
+         if(link.ctrlKey){
+            window.open("https://www.amazon.in/")
+         }
+        }
+    </script>
+</head>
+
+<body>
+    <label onclick="lblclick(event)" title="ctrl + click to open">www.amazon.in</label>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnclk(obj, e, ...product) {
+            var [id, name, rating] = product;
+            document.write({obj.id} {e})
+        }
+    </script>
+</head>
+
+<body>
+    <div onclick="btnclk(this,event,1,'tv',{rate:4.5})">details</div>
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnclk(obj, e, ...product) {
+            var [id, name, rating] = product;
+            document.write(`${obj} 
+              ${e.clientX} 
+              ${id}
+              ${name} 
+              ${rating.rate}`)
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="btnclk(this,event,1,'tv',{rate:4.5})">details</button>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="'../node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+    <script>
+        function  bodyload(){
+            document.getElementById("puspa-2").addEventListener("click",(e)=>{
+               console.log(`
+               ${e.clientX} 
+               ${e.target.name}
+               ${e.target.id}
+               ${e.ctrlKey}
+               `)
+            })
+        }
+    </script>
+</head>
+<body onload=bodyload()>
+    <button id="puspa-2" name="PuspaRaj" style="background-color: red; color: aliceblue; font-size: large; border: 1px solid red; font-family: arial;">Kissik </button>
+</body>
+</html>

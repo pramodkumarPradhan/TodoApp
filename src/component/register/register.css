@@ -1,0 +1,18 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.style{
+    border: 2px solid grey;
+    padding: 15px;
+    box-shadow: 1px 1px 1px black;
+    background-color: red;
+    color: white;
+}
+.btn{
+    background-color: skyblue;
+    color: white;
+}

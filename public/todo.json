@@ -1,0 +1,18 @@
+{
+  "User": [
+    {
+      "id": "065e",
+      "userid": "Pramod_nit",
+      "password": "Pramod@2003",
+      "email": "promodpradhan369@gmail.com"
+    }
+  ],
+  "Assignment": [
+    {
+      "id": "fbc7",
+      "title": "erty",
+      "date": "2025-03-14",
+      "userid": "Pramod_nit"
+    }
+  ]
+}

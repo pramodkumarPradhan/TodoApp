@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import '../src/component/Databinding/jquery/jquery.css';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Fakestore } from './Fakestorepage';
+import App from './App';
+import { Todoindex } from './To-Do/Todoindex';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <Todoindex/>
 );
 
 // If you want to start measuring performance in your app, pass a function
